@@ -9,7 +9,7 @@ import { UserRole } from "@prisma/client";
 import React from "react";
 import { toast } from "sonner";
 
-export default function page() {
+export default function Page() {
   const role = useCurrentRole();
   const onApiRouteClick = () => {
     fetch("/api/admin")
